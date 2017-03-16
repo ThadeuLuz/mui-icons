@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sample": "babel-node tools/build.js --sample",
     "build": "babel-node tools/build.js"
   },
   "repository": {

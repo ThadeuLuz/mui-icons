@@ -3,6 +3,8 @@ import _ from 'lodash';
 import glob from 'glob';
 import { mkdirSync, removeSync, readFileSync, writeFileSync } from 'fs-extra';
 
+const sample = process.argv.includes('--sample');
+
 // Grabbing svgs from source makes updates easier (font awesome and typicons take more work)
 const libraries = {
   mdi: { 
@@ -54,9 +56,12 @@ _.forEach(libraries, (config, code) => {
   summary[code] = [];
 
   // Find and loop through svgs
-  const filePaths = glob.sync(config.glob);
+  let filePaths = glob.sync(config.glob);
 
-  filePaths.slice(0, 10).forEach((filePath) => {
+  // Limit to first 10 icons if --sample argument was passed
+  if (sample) filePaths = filePaths.slice(0, 10);
+
+  filePaths.forEach((filePath) => {
 
     let basename = path.basename(filePath, '.svg');
     (config.remove || []).forEach(s => basename = basename.replace(s, ''))
