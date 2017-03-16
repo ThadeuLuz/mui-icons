@@ -1,0 +1,29 @@
+{
+  "name": "mui-icons",
+  "version": "0.0.1",
+  "description": "Popular Icons library combined and compatible with Material UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThadeuLuz/mui-icons.git"
+  },
+  "keywords": [
+    "react",
+    "icons",
+    "inline",
+    "svg",
+    "font",
+    "awesome",
+    "material",
+    "design"
+  ],
+  "author": "Thadeu Luz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThadeuLuz/mui-icons/issues"
+  },
+  "homepage": "https://github.com/ThadeuLuz/mui-icons#readme"
+}
