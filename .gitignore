@@ -2,10 +2,10 @@
 node_modules
 
 # Generated code
-evilicons
-fontawesome
-ionicons
-mdi
-octicons
-typicons
+/evilicons/
+/fontawesome/
+/ionicons/
+/mdi/
+/octicons/
+/typicons/
 index.js
