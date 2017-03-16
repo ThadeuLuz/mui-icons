@@ -6,6 +6,7 @@ node_modules
 /fontawesome/
 /ionicons/
 /mdi/
+/cmdi/
 /octicons/
 /typicons/
 index.js
