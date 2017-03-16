@@ -9,6 +9,9 @@ const libraries = {
     glob: './node_modules/material-design-icons/*/svg/production/*_24px.svg',
     remove: ['ic_', '_24px'],
   },
+  cmdi: {
+    glob: './iconsSrc/fontawesome/*.svg',
+  },
   fontawesome: {
     glob: './iconsSrc/fontawesome/*.svg',
   },

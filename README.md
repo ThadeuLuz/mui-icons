@@ -36,6 +36,7 @@ export default PizzaButton;
 | Name | Folder Name | Home Page |
 |---|---|---|
 | Material Design Icons | `mdi` | https://material.io/icons/
+| Community Material Design Icons | `cmdi` | https://materialdesignicons.com/
 | FontAwesome | `fontawesome` | http://fontawesome.io/ |
 | Typicons | `typicons` | http://www.typicons.com/ |
 | Github Octicons | `octicons` | https://octicons.github.com/ |
