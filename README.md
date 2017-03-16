@@ -20,7 +20,7 @@ Simply import the icons you want and add them to [IconButtons](http://www.materi
 ```javascript
 import React from 'react';
 import IconButton from 'material-ui/IconButton';
-import Pizza from 'mui-icons/io/pizza';
+import Pizza from 'mui-icons/ionicons/pizza';
 
 const PizzaButton = () => (
   <IconButton>
@@ -35,20 +35,20 @@ export default PizzaButton;
 
 | Name | Folder Name | Home Page |
 |---|---|---|
-| Material Design Icons | `md` | https://material.io/icons/
-| FontAwesome | `fa` | http://fontawesome.io/ |
-| Typicons | `ti` | http://www.typicons.com/ |
-| Github Octicons | `go` | https://octicons.github.com/ |
-| Ionicons | `io` | http://ionicons.com/ |
-| Community Material Design Icons | `cm` | https://materialdesignicons.com/ |
+| Material Design Icons | `mdi` | https://material.io/icons/
+| FontAwesome | `fontawesome` | http://fontawesome.io/ |
+| Typicons | `typicons` | http://www.typicons.com/ |
+| Github Octicons | `octicons` | https://octicons.github.com/ |
+| Ionicons | `ionicons` | http://ionicons.com/ |
+| Evil Icons | `evilicons` | http://evil-icons.io/ |
 
 ## Configuration
 
 Any props added to an Icon will be forwarded to Mui's SvgIcon element (except for `children`, which will be the path of the icon you want). [Check the Mui docs](http://www.material-ui.com/#/components/svg-icon) to see it's props.
 
-## Inspirations
+## Final Notes
 
-- [react-icons](https://github.com/gorangajic/react-icons)
+This package is heavily based on top of the excelent [react-icons](https://github.com/gorangajic/react-icons) package.
 
 ### Licence
 
