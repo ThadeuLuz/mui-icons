@@ -50,7 +50,7 @@ Any props added to an Icon will be forwarded to Mui's SvgIcon element (except fo
 ## Known Issues
 
 - Ionicons uses style on some icons, which react doesn't seem to like.
-- 
+- `svgscaler` breaks IonIcons and EvilIcons. Using style to reset scale and position.
 
 ## Final Notes
 
