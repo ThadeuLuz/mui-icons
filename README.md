@@ -9,9 +9,13 @@ Effortlessly include icons from the most popular icon libraries in you [Material
 
 ## Installation
 
-This package has `material-ui` as a peer dependency
+Yes, you guessed it:
 
-    npm install react-icons-mui material-ui --save
+    npm i -S mui-icons
+
+This package has `material-ui` as a peer dependency, so remember to also have that in your `node_modules`.
+
+    npm i -S material-ui
 
 ## Usage
 
