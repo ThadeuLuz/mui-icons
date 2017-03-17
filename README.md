@@ -24,11 +24,18 @@ Simply import the icons you want and add them to [IconButtons](http://www.materi
 ```javascript
 import React from 'react';
 import IconButton from 'material-ui/IconButton';
-import Pizza from 'mui-icons/ionicons/pizza';
+
+import Heart from 'mui-icons/cmdi/heart';
+// import Heart from 'mui-icons/evilicons/heart';
+// import Heart from 'mui-icons/fontawesome/heart';
+// import Heart from 'mui-icons/ionicons/ios-heart';
+// import Heart from 'mui-icons/mdi/favorite';
+// import Heart from 'mui-icons/octicons/heart';
+// import Heart from 'mui-icons/typicons/heart';
 
 const PizzaButton = () => (
   <IconButton>
-    <Pizza />
+    <Heart />
   <IconButton>
 );
 
