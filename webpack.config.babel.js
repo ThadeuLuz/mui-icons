@@ -12,6 +12,7 @@ const config = {
     rules: [
       {
         test: /\.jsx?$/,
+        exclude: /node_modules/,
         use: [{ loader: 'babel-loader', query: { compact: false } }],
       },
       {
