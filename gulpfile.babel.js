@@ -7,6 +7,9 @@ import svgo from 'gulp-svgo';
 import concatFilenames from 'gulp-concat-filenames';
 import _, { upperFirst, camelCase, template, includes } from 'lodash';
 import transform from 'gulp-transform';
+import babel from 'gulp-babel';
+
+const babelConfig = { presets: ['latest', 'stage-0', 'react'] };
 
 // Source svgs
 const globs = {
@@ -95,8 +98,10 @@ gulp.task('cmdi', ['clean'], () => gulp.src(globs.cmdi)
   .pipe(transform(fix(), { encoding: 'utf8' }))
   .pipe(rename({ dirname: '/', extname: '.js' }))
   .pipe(transform(check, { encoding: 'utf8' }))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./cmdi/'))
   .pipe(concatFilenames('index.js', concatConfig('cmdi')))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./cmdi/')));
 
 
@@ -111,8 +116,10 @@ gulp.task('evilicons', ['clean'], () => gulp.src(globs.evilicons)
     path.extname = '.js';
   }))
   .pipe(transform(check, { encoding: 'utf8' }))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./evilicons/'))
   .pipe(concatFilenames('index.js', concatConfig('evilicons')))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./evilicons/')));
 
 
@@ -122,8 +129,10 @@ gulp.task('fontawesome', ['clean'], () => gulp.src(globs.fontawesome)
   .pipe(transform(fix(), { encoding: 'utf8' }))
   .pipe(rename({ dirname: '/', extname: '.js' }))
   .pipe(transform(check, { encoding: 'utf8' }))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./fontawesome/'))
   .pipe(concatFilenames('index.js', concatConfig('fontawesome')))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./fontawesome/')));
 
 
@@ -134,8 +143,10 @@ gulp.task('ionicons', ['clean'], () => gulp.src(globs.ionicons)
   .pipe(transform(fix({ scale: '0.045' }), { encoding: 'utf8' }))
   .pipe(rename({ dirname: '/', extname: '.js' }))
   .pipe(transform(check, { encoding: 'utf8' }))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./ionicons/'))
   .pipe(concatFilenames('index.js', concatConfig('ionicons')))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./ionicons/')));
 
 
@@ -149,8 +160,10 @@ gulp.task('mdi', ['clean'], () => gulp.src(globs.mdi)
     path.extname = '.js';
   }))
   .pipe(transform(check, { encoding: 'utf8' }))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./mdi/'))
   .pipe(concatFilenames('index.js', concatConfig('mdi')))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./mdi/')));
 
 
@@ -160,8 +173,10 @@ gulp.task('octicons', ['clean'], () => gulp.src(globs.octicons)
   .pipe(transform(fix(), { encoding: 'utf8' }))
   .pipe(rename({ dirname: '/', extname: '.js' }))
   .pipe(transform(check, { encoding: 'utf8' }))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./octicons/'))
   .pipe(concatFilenames('index.js', concatConfig('octicons')))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./octicons/')));
 
 
@@ -171,8 +186,10 @@ gulp.task('typicons', ['clean'], () => gulp.src(globs.typicons)
   .pipe(transform(fix(), { encoding: 'utf8' }))
   .pipe(rename({ dirname: '/', extname: '.js' }))
   .pipe(transform(check, { encoding: 'utf8' }))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./typicons/'))
   .pipe(concatFilenames('index.js', concatConfig('typicons')))
+  .pipe(babel(babelConfig))
   .pipe(gulp.dest('./typicons/')));
 
 
@@ -196,5 +213,6 @@ gulp.task('clean', () => del([
   './octicons/',
   './typicons/',
 ]));
+
 
 gulp.task('default', ['build']);
