@@ -54,6 +54,7 @@ const Menu = ({ setLibrary, library, ...props }) => (
 );
 Menu.propTypes = {
   setLibrary: PropTypes.func.isRequired,
+  library: PropTypes.string.isRequired,
 };
 Menu.muiName = 'IconMenu';
 
