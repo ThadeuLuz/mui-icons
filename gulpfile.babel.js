@@ -84,7 +84,7 @@ const check = (content, v) => {
   !includes(content, '</g>') ||
   includes(content, 'NaN') ||
   includes(content, 'xml version')) {
-    console.error('Broken:', v.path);
+    console.error('Broken:', v.path); // eslint-disable-line no-console
   }
   return content;
 };
