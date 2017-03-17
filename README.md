@@ -33,19 +33,24 @@ export default PizzaButton;
 
 ## Libraries Included
 
-| Name | Folder Name | Home Page |
-|---|---|---|
-| Material Design Icons | `mdi` | https://material.io/icons/
-| Community Material Design Icons | `cmdi` | https://materialdesignicons.com/
-| FontAwesome | `fontawesome` | http://fontawesome.io/ |
-| Typicons | `typicons` | http://www.typicons.com/ |
-| Github Octicons | `octicons` | https://octicons.github.com/ |
-| Ionicons | `ionicons` | http://ionicons.com/ |
-| Evil Icons | `evilicons` | http://evil-icons.io/ |
+| Name | Folder Name | Home Page | Number if Icons |
+|---|---|---|---|
+| Community Material Design Icons | `cmdi` | https://materialdesignicons.com/ | 1956 |
+| Evil Icons | `evilicons` | http://evil-icons.io/ | 70 |
+| FontAwesome | `fontawesome` | http://fontawesome.io/ | 694 |
+| Ionicons | `ionicons` | http://ionicons.com/ | 859 |
+| Material Design Icons | `mdi` | https://material.io/icons/ | 959 |
+| Github Octicons | `octicons` | https://octicons.github.com/ | 176 |
+| Typicons | `typicons` | http://www.typicons.com/ | 336 |
 
 ## Configuration
 
-Any props added to an Icon will be forwarded to Mui's SvgIcon element (except for `children`, which will be the path of the icon you want). [Check the Mui docs](http://www.material-ui.com/#/components/svg-icon) to see it's props.
+Any props added to an Icon will be forwarded to Mui's SvgIcon element (except for `children`, which will be the paths of the icon you want). [Check the Mui docs](http://www.material-ui.com/#/components/svg-icon) to see it's props.
+
+## Known Issues
+
+- Ionicons uses style on some icons, which react doesn't seem to like.
+- 
 
 ## Final Notes
 
