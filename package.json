@@ -1,6 +1,6 @@
 {
   "name": "mui-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Popular Icons library combined and compatible with Material UI",
   "main": "index.js",
   "scripts": {
