@@ -1,4 +1,7 @@
-iconsSrc
-tools
+src
+
 .babelrc
-.vscode
+.eslintignore
+.eslintrc.json
+gulpfile.babel.js
+webpack.config.babel.js
