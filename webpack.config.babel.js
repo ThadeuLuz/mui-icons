@@ -3,6 +3,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const config = {
   entry: './src/index.jsx',
+  devtool: 'eval',
   resolve: { extensions: ['.js', '.jsx'] },
   output: {
     filename: 'bundle.js',
@@ -12,7 +13,7 @@ const config = {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: /node_modules/,
+        include: './src',
         use: [{ loader: 'babel-loader', query: { compact: false } }],
       },
       {
