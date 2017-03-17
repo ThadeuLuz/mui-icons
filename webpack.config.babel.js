@@ -13,7 +13,7 @@ const config = {
     rules: [
       {
         test: /\.jsx?$/,
-        include: './src',
+        include: path.resolve(__dirname, 'src'),
         use: [{ loader: 'babel-loader', query: { compact: false } }],
       },
       {
