@@ -5,7 +5,7 @@
 [npm-image]: https://img.shields.io/npm/v/mui-icons.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/mui-icons
 
-Effortlessly include icons from the most popular icon libraries in you [Material-UI](http://www.material-ui.com/#/) project. This project just wraps each icon with Mui's [SvgIcon](http://www.material-ui.com/#/components/svg-icon) component and exports them using ES6 imports.
+Effortlessly include icons from the most popular icon libraries in you [Material-UI](http://www.material-ui.com/#/) project. This project wraps each icon with Mui's [SvgIcon](http://www.material-ui.com/#/components/svg-icon) component and exports them using ES6 imports, so they are easy to import and use, and will match your theme.
 
 ## Installation
 
@@ -54,7 +54,7 @@ Any props added to an Icon will be forwarded to Mui's SvgIcon element (except fo
 
 ## Final Notes
 
-This package is heavily based on top of the excelent [react-icons](https://github.com/gorangajic/react-icons) package.
+This package is based on the excelent [react-icons](https://github.com/gorangajic/react-icons) package.
 
 ### Licence
 
