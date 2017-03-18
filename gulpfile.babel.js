@@ -64,6 +64,7 @@ const fix = (opt = {}) => (_content) => {
   // Remove fill
   content = _.replace(content, /fill=".*?"/, '');
   content = _.replace(content, /fill-opacity=".*?"/, '');
+  content = _.replace(content, /fill-rule=".*?"/, '');
 
   // Remove namespace atts
   content = _.replace(content, /xlink:href=".*?"/, '');
