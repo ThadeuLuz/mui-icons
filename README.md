@@ -5,7 +5,7 @@
 [npm-image]: https://img.shields.io/npm/v/mui-icons.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/mui-icons
 
-Effortlessly include icons from the most popular icon libraries in you [Material-UI](http://www.material-ui.com/#/) project. This project wraps each icon with Mui's [SvgIcon](http://www.material-ui.com/#/components/svg-icon) component and exports them using ES6 imports, so they are easy to import and use, and will match your theme.
+Effortlessly include icons from the most popular icon libraries in you [Material-UI](http://www.material-ui.com/#/) project. This project wraps each icon with Mui's [SvgIcon](http://www.material-ui.com/#/components/svg-icon) component so they are compatible with Material UI and will match your theme.
 
 ## Installation
 
@@ -36,7 +36,7 @@ import Heart from 'mui-icons/cmdi/heart';
 const PizzaButton = () => (
   <IconButton>
     <Heart />
-  <IconButton>
+  </IconButton>
 );
 
 export default PizzaButton;
