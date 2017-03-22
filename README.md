@@ -42,6 +42,16 @@ const PizzaButton = () => (
 export default PizzaButton;
 ```
 
+If you know what you are doing you may also include all of the icons from a library:
+
+```javascript
+import Ionicons from 'mui-icons/ionicons';
+// Or
+import { Ionicons } from 'mui-icons';
+```
+
+I would advise against this, since it would result in a bundle larger than necessary (unless you really are using every single icon from the package).
+
 ## Libraries Included
 
 | Name | Folder Name | Home Page | Number if Icons |
