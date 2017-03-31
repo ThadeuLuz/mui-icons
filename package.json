@@ -7,8 +7,7 @@
     "lint": "eslint . --ext jsx --ext js --color",
     "clean": "gulp clean",
     "build": "gulp build",
-    "start": "webpack-dev-server --open",
-    "check": "babel-node tools/check.js"
+    "start": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -47,6 +46,7 @@
     "babel-preset-stage-0": "^6.22.0",
     "css-loader": "^0.27.3",
     "del": "^2.2.2",
+    "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
@@ -66,12 +66,14 @@
     "lodash": "^4.17.4",
     "material-design-icons": "^3.0.1",
     "material-ui": "^0.17.1",
+    "mdi": "^1.8.36",
     "octicons": "^5.0.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-tap-event-plugin": "^2.0.1",
     "style-loader": "^0.14.1",
     "svg-scaler": "^0.1.5",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
   }
 }
