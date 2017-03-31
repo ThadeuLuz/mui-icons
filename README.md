@@ -33,24 +33,25 @@ import Heart from 'mui-icons/cmdi/heart';
 // import Heart from 'mui-icons/octicons/heart';
 // import Heart from 'mui-icons/typicons/heart';
 
-const PizzaButton = () => (
+const LoveButton = () => (
   <IconButton>
     <Heart />
   </IconButton>
 );
 
-export default PizzaButton;
+export default LoveButton;
 ```
 
 If you know what you are doing you may also include all of the icons from a library:
 
 ```javascript
+// Prefer this
 import Ionicons from 'mui-icons/ionicons';
-// Or
+// This works too, but don't use it
 import { Ionicons } from 'mui-icons';
 ```
 
-I would advise against this, since it would result in a bundle larger than necessary (unless you really are using every single icon from the package).
+The first option is preferable, because the second, if a tree-shake is not implemented it would result in a bundle larger than necessary (unless you really are using every single icon from the package).
 
 ## Libraries Included
 
